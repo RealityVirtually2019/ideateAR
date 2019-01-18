@@ -39,7 +39,7 @@ public class SocketClient : MonoBehaviour
         {
             if (!string.IsNullOrEmpty(socketMessage))
             {
-                //StatusLabel.text = "< " + socketMessage;
+                if(socketMessage.Length < 50) StatusLabel.text = "< " + socketMessage;
                 LastMessage = socketMessage;
                 socketMessage = null;
                 IsNewMessage = true;

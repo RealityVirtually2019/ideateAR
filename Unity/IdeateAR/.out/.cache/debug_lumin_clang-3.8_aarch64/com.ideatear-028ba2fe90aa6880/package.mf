@@ -43,7 +43,7 @@
   },
   {
    "compression": 8,
-   "hash": "321c5191c4e339d63ae4a38fd0116a415baaa7b2",
+   "hash": "27c10545ce3c0ec6ddcdc3e746691e77097df193",
    "pkgpath": "Data/3f5b5dff67a942289a9defa416b206f3",
    "size": 4344,
    "src": "D:/code/ideateAR/Unity/IdeateAR/Temp/StagingArea/Data/3f5b5dff67a942289a9defa416b206f3"
@@ -64,14 +64,14 @@
   },
   {
    "compression": 8,
-   "hash": "04dcf88b95670df3c4455f15e4ca52cc6edb21b4",
+   "hash": "3dcf83c49c9051ac2c987ed80af97b7eed076caa",
    "pkgpath": "Data/68e6db2ebdc24f95958faec2be5558d6",
    "size": 18080,
    "src": "D:/code/ideateAR/Unity/IdeateAR/Temp/StagingArea/Data/68e6db2ebdc24f95958faec2be5558d6"
   },
   {
    "compression": 8,
-   "hash": "43654205f9bc08f9e9f5ea18e347b9041782ab7e",
+   "hash": "9d2a8cb1a225c90a4c38a1f446ab23c460f0fbaa",
    "pkgpath": "Data/79459efec17a4d00a321bdcc27bbc385",
    "size": 5648,
    "src": "D:/code/ideateAR/Unity/IdeateAR/Temp/StagingArea/Data/79459efec17a4d00a321bdcc27bbc385"
@@ -85,16 +85,16 @@
   },
   {
    "compression": 8,
-   "hash": "1e0d73a9ab9388b553bfa0a130ac455cb88fd23b",
+   "hash": "bb9dfa742fedc2edfbd0ce4f243313372fdec7ba",
    "pkgpath": "Data/Managed/Metadata/global-metadata.dat",
-   "size": 3178332,
+   "size": 3179440,
    "src": "D:/code/ideateAR/Unity/IdeateAR/Temp/StagingArea/Data/Managed/Metadata/global-metadata.dat"
   },
   {
    "compression": 8,
-   "hash": "44d6ba8024656209450d0dcac7e98d68345e730e",
+   "hash": "fa6c6ce56138732fd46513333c65e12a9214c460",
    "pkgpath": "bin/libil2cpp.so",
-   "size": 39768728,
+   "size": 39775384,
    "src": "D:/code/ideateAR/Unity/IdeateAR/Temp/StagingArea/Data/Native/libil2cpp.so",
    "xfrm_flags": {
     "signed": {
@@ -106,9 +106,9 @@
      "version": 3
     }
    },
-   "xfrm_hash": "9bd19732427b126dcd8ece18fa20a1a7db6d4f5e",
+   "xfrm_hash": "df0eafac9ac8d947b48b5241ef5d25812d8252ad",
    "xfrm_path": "D:/code/ideateAR/Unity/IdeateAR/.out/.cache/debug_lumin_clang-3.8_aarch64/com.ideatear-028ba2fe90aa6880\\libil2cpp.so-20ea9a68d03b9eb7",
-   "xfrm_size": 39769486
+   "xfrm_size": 39776142
   },
   {
    "compression": 8,
@@ -290,7 +290,7 @@
   },
   {
    "compression": 8,
-   "hash": "ba708357e34e4be589b45bf23f7643e927b5088f",
+   "hash": "fbf4369fc8ef28ea17b499d7028a2e1355c2adb3",
    "pkgpath": "Data/dd89cf5b9246416f84610a006f916af7",
    "size": 18072,
    "src": "D:/code/ideateAR/Unity/IdeateAR/Temp/StagingArea/Data/dd89cf5b9246416f84610a006f916af7"
@@ -311,7 +311,7 @@
   },
   {
    "compression": 8,
-   "hash": "254a8d283ff73b29a9c64cd51f22c859a0d9e6a8",
+   "hash": "d997a6b4455aef203b728f09af595fc08df06f88",
    "pkgpath": "Data/e73a58f6e2794ae7b1b7e50b7fb811b0",
    "size": 5716,
    "src": "D:/code/ideateAR/Unity/IdeateAR/Temp/StagingArea/Data/e73a58f6e2794ae7b1b7e50b7fb811b0"
@@ -339,23 +339,23 @@
   },
   {
    "compression": 8,
-   "hash": "ff5d70f3bfe4a3470a78390560665777dd70678d",
+   "hash": "953f67455ca15b2b3ff088bd36d1d21028f356a5",
    "pkgpath": "Data/globalgamemanagers",
-   "size": 37276,
+   "size": 37388,
    "src": "D:/code/ideateAR/Unity/IdeateAR/Temp/StagingArea/Data/globalgamemanagers"
   },
   {
    "compression": 8,
-   "hash": "e72774cc4d35ffce7c2e6aa05d853b4d9b52698e",
+   "hash": "bb9d11bd93cb9071a3e1fbc601270fbbae6d0c6e",
    "pkgpath": "Data/globalgamemanagers.assets",
    "size": 41584,
    "src": "D:/code/ideateAR/Unity/IdeateAR/Temp/StagingArea/Data/globalgamemanagers.assets"
   },
   {
    "compression": 8,
-   "hash": "efa12f8cfccd966a9d7e5daaec18c94cfb61d8f2",
+   "hash": "0f089ca76bba943f07ac3601081b236deb07a124",
    "pkgpath": "Data/level0",
-   "size": 21100,
+   "size": 23128,
    "src": "D:/code/ideateAR/Unity/IdeateAR/Temp/StagingArea/Data/level0"
   },
   {
@@ -367,9 +367,9 @@
   },
   {
    "compression": 8,
-   "hash": "c311ed5d218050ee765c9e63036805186978886d",
+   "hash": "5c865bfe73ed9fbd42ef5bdfef0f57efb373c7ca",
    "pkgpath": "Data/sharedassets0.assets",
-   "size": 1159236,
+   "size": 1808684,
    "src": "D:/code/ideateAR/Unity/IdeateAR/Temp/StagingArea/Data/sharedassets0.assets"
   },
   {
