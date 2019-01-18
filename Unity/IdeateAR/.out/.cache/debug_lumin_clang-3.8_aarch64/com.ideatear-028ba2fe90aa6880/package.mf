@@ -43,7 +43,7 @@
   },
   {
    "compression": 8,
-   "hash": "e75fefb79005cef0e36fcf69a47f4debdddaf4db",
+   "hash": "03e1338d500b44c07755b1e425706da0199f0439",
    "pkgpath": "Data/3f5b5dff67a942289a9defa416b206f3",
    "size": 4344,
    "src": "D:/code/ideateAR/Unity/IdeateAR/Temp/StagingArea/Data/3f5b5dff67a942289a9defa416b206f3"
@@ -64,14 +64,14 @@
   },
   {
    "compression": 8,
-   "hash": "d695f70dc3ce3fc301a983b8058aa1f394108c71",
+   "hash": "fc07d64074fa6e0de35c1572f34c83761283946a",
    "pkgpath": "Data/68e6db2ebdc24f95958faec2be5558d6",
    "size": 18080,
    "src": "D:/code/ideateAR/Unity/IdeateAR/Temp/StagingArea/Data/68e6db2ebdc24f95958faec2be5558d6"
   },
   {
    "compression": 8,
-   "hash": "0973304204a407c89e1234a2fef2f73b06026ca5",
+   "hash": "6ce06ee917832b0089e1d6c79043caf9262ddbfe",
    "pkgpath": "Data/79459efec17a4d00a321bdcc27bbc385",
    "size": 5648,
    "src": "D:/code/ideateAR/Unity/IdeateAR/Temp/StagingArea/Data/79459efec17a4d00a321bdcc27bbc385"
@@ -85,16 +85,16 @@
   },
   {
    "compression": 8,
-   "hash": "8b8b1af97f53b9abe69e27512f3ebd222abb6c2f",
+   "hash": "825206e59326c3f31516be4e820448f720da9be3",
    "pkgpath": "Data/Managed/Metadata/global-metadata.dat",
-   "size": 3177900,
+   "size": 3195556,
    "src": "D:/code/ideateAR/Unity/IdeateAR/Temp/StagingArea/Data/Managed/Metadata/global-metadata.dat"
   },
   {
    "compression": 8,
-   "hash": "990337bfecaab85f670f7bed9f5ec726f0284dea",
+   "hash": "9c4b041bad792f267ce34d0d1b1e96de14717fa9",
    "pkgpath": "bin/libil2cpp.so",
-   "size": 39767520,
+   "size": 39768152,
    "src": "D:/code/ideateAR/Unity/IdeateAR/Temp/StagingArea/Data/Native/libil2cpp.so",
    "xfrm_flags": {
     "signed": {
@@ -106,9 +106,9 @@
      "version": 3
     }
    },
-   "xfrm_hash": "22bab668e8bd0b823761662a97adb4f6fbf999d7",
+   "xfrm_hash": "1752403cd41da026a9d29d27e64b4abf55ce9acd",
    "xfrm_path": "D:/code/ideateAR/Unity/IdeateAR/.out/.cache/debug_lumin_clang-3.8_aarch64/com.ideatear-028ba2fe90aa6880\\libil2cpp.so-20ea9a68d03b9eb7",
-   "xfrm_size": 39768278
+   "xfrm_size": 39768910
   },
   {
    "compression": 8,
@@ -290,7 +290,7 @@
   },
   {
    "compression": 8,
-   "hash": "b5a72a7f362dc35d71b29ec10b1c7086bdf73204",
+   "hash": "a71c43d861a4dd953272b816c7025301a4a2173b",
    "pkgpath": "Data/dd89cf5b9246416f84610a006f916af7",
    "size": 18072,
    "src": "D:/code/ideateAR/Unity/IdeateAR/Temp/StagingArea/Data/dd89cf5b9246416f84610a006f916af7"
@@ -311,7 +311,7 @@
   },
   {
    "compression": 8,
-   "hash": "086e5cb0f9692f72c11c8498a19bf86e902416a2",
+   "hash": "8b9e9ce656441e24d8ad01a23466722ef15b584e",
    "pkgpath": "Data/e73a58f6e2794ae7b1b7e50b7fb811b0",
    "size": 5716,
    "src": "D:/code/ideateAR/Unity/IdeateAR/Temp/StagingArea/Data/e73a58f6e2794ae7b1b7e50b7fb811b0"
@@ -339,23 +339,23 @@
   },
   {
    "compression": 8,
-   "hash": "c28befa193f4f3c38a974e9bf484a170b7668ae7",
+   "hash": "ff5e13364842cd3b4b4e2ccaa210c7b247d40900",
    "pkgpath": "Data/globalgamemanagers",
-   "size": 37244,
+   "size": 37276,
    "src": "D:/code/ideateAR/Unity/IdeateAR/Temp/StagingArea/Data/globalgamemanagers"
   },
   {
    "compression": 8,
-   "hash": "4df721d2b5c1fe8d60c5cbe37cf325b086c6435c",
+   "hash": "e72774cc4d35ffce7c2e6aa05d853b4d9b52698e",
    "pkgpath": "Data/globalgamemanagers.assets",
    "size": 41584,
    "src": "D:/code/ideateAR/Unity/IdeateAR/Temp/StagingArea/Data/globalgamemanagers.assets"
   },
   {
    "compression": 8,
-   "hash": "fbeb5ad7a32d79b7b25422c4ccd63d9a3be68610",
+   "hash": "7637e92093e4ed188c358a65b2425150b35557cd",
    "pkgpath": "Data/level0",
-   "size": 12792,
+   "size": 12804,
    "src": "D:/code/ideateAR/Unity/IdeateAR/Temp/StagingArea/Data/level0"
   },
   {
@@ -367,9 +367,9 @@
   },
   {
    "compression": 8,
-   "hash": "d2e019b7499c39c5b5c99768b34a06b187226eea",
+   "hash": "0d7025c882f53fed062f905e619d24b47c2063ac",
    "pkgpath": "Data/sharedassets0.assets",
-   "size": 565492,
+   "size": 564324,
    "src": "D:/code/ideateAR/Unity/IdeateAR/Temp/StagingArea/Data/sharedassets0.assets"
   },
   {

@@ -39,7 +39,7 @@ public class SocketClient : MonoBehaviour
         {
             if (!string.IsNullOrEmpty(socketMessage))
             {
-                StatusLabel.text = "< " + socketMessage;
+                //StatusLabel.text = "< " + socketMessage;
                 LastMessage = socketMessage;
                 socketMessage = null;
                 IsNewMessage = true;
@@ -71,7 +71,7 @@ public class SocketClient : MonoBehaviour
     private void Socket_OnMessage(object sender, MessageEventArgs e)
     {
         Debug.Log("Message received: " + e.Data);
-        socket.Send("Unity says oi");
+        //socket.Send("Unity says oi");
 
         lock (messageLock)
         {

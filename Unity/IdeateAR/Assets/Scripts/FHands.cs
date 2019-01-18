@@ -5,7 +5,7 @@ using UnityEngine.XR.MagicLeap;
 
 public class FilterSettings
 {
-    public float BounceTime = 1.5f;
+    public float BounceTime = 1f;
     public float MinConfidence = 0.5f;
 }
 
