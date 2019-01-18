@@ -1,0 +1,430 @@
+{
+ "entries": [
+  {
+   "compression": 8,
+   "hash": "5925de9f4d7b83c65d1fd7b25ced5f0bf8c27e73",
+   "pkgpath": "bin/libc++_shared.so",
+   "size": 976832,
+   "src": "D:/Magic Leap/mlsdk/v0.18.0/lumin/stl/libc++/lib/libc++_shared.so",
+   "xfrm_flags": {
+    "signed": {
+     "cert": "D:\\Clients\\Internal\\sandbox.cert"
+    },
+    "taildata": {
+     "debuggable": true,
+     "sbox": "USER",
+     "version": 3
+    }
+   },
+   "xfrm_hash": "95796b27f5ff726326f0d727b807d472d89a6332",
+   "xfrm_path": "D:/Unity/IdeateAR/.out/.cache/debug_lumin_clang-3.8_aarch64/com.ideatear-0a67476e53749e5a\\libc++_shared.so-864b24143330e6b0",
+   "xfrm_size": 977590
+  },
+  {
+   "compression": 8,
+   "hash": "7295ee181287360727e8236df9175dd49245f43c",
+   "pkgpath": "Data/128e987d567d4e2c824d754223b3f3b0",
+   "size": 12080,
+   "src": "D:/Unity/IdeateAR/Temp/StagingArea/Data/128e987d567d4e2c824d754223b3f3b0"
+  },
+  {
+   "compression": 8,
+   "hash": "691eb54540225613c95d764ab16900c14d77a640",
+   "pkgpath": "Data/1e3b057af24249748ff873be7fafee47",
+   "size": 14260,
+   "src": "D:/Unity/IdeateAR/Temp/StagingArea/Data/1e3b057af24249748ff873be7fafee47"
+  },
+  {
+   "compression": 8,
+   "hash": "6b71090832f02bf8f9e5cdb0e9e2d3ff159dcf7e",
+   "pkgpath": "Data/3997e2241185407d80309a82f9148466",
+   "size": 4120,
+   "src": "D:/Unity/IdeateAR/Temp/StagingArea/Data/3997e2241185407d80309a82f9148466"
+  },
+  {
+   "compression": 8,
+   "hash": "e75fefb79005cef0e36fcf69a47f4debdddaf4db",
+   "pkgpath": "Data/3f5b5dff67a942289a9defa416b206f3",
+   "size": 4344,
+   "src": "D:/Unity/IdeateAR/Temp/StagingArea/Data/3f5b5dff67a942289a9defa416b206f3"
+  },
+  {
+   "compression": 8,
+   "hash": "9f6836b1bd99237f969c283cfd9156b2a1143dcb",
+   "pkgpath": "Data/407bc68d299748449bbf7f48ee690f8d",
+   "size": 4112,
+   "src": "D:/Unity/IdeateAR/Temp/StagingArea/Data/407bc68d299748449bbf7f48ee690f8d"
+  },
+  {
+   "compression": 8,
+   "hash": "e9e5b3f7bd8ed3801be935e51f5bcd18a31cb337",
+   "pkgpath": "Data/48bb5f55d8670e349b6e614913f9d910",
+   "size": 11944,
+   "src": "D:/Unity/IdeateAR/Temp/StagingArea/Data/48bb5f55d8670e349b6e614913f9d910"
+  },
+  {
+   "compression": 8,
+   "hash": "d695f70dc3ce3fc301a983b8058aa1f394108c71",
+   "pkgpath": "Data/68e6db2ebdc24f95958faec2be5558d6",
+   "size": 18080,
+   "src": "D:/Unity/IdeateAR/Temp/StagingArea/Data/68e6db2ebdc24f95958faec2be5558d6"
+  },
+  {
+   "compression": 8,
+   "hash": "0973304204a407c89e1234a2fef2f73b06026ca5",
+   "pkgpath": "Data/79459efec17a4d00a321bdcc27bbc385",
+   "size": 5648,
+   "src": "D:/Unity/IdeateAR/Temp/StagingArea/Data/79459efec17a4d00a321bdcc27bbc385"
+  },
+  {
+   "compression": 8,
+   "hash": "f296d63e97e4d28c3bf710fa2d53bfc19e8bff5e",
+   "pkgpath": "Data/85187c2149c549c5b33f0cdb02836b17",
+   "size": 21656,
+   "src": "D:/Unity/IdeateAR/Temp/StagingArea/Data/85187c2149c549c5b33f0cdb02836b17"
+  },
+  {
+   "compression": 8,
+   "hash": "2b608b76ec3ed0e9ecb34cb6a54cc8a32cbc8580",
+   "pkgpath": "Data/Managed/Metadata/global-metadata.dat",
+   "size": 3177900,
+   "src": "D:/Unity/IdeateAR/Temp/StagingArea/Data/Managed/Metadata/global-metadata.dat"
+  },
+  {
+   "compression": 8,
+   "hash": "61c16ac446e17bf2f9a745f7556ca63a4c6daeef",
+   "pkgpath": "bin/libil2cpp.so",
+   "size": 39769920,
+   "src": "D:/Unity/IdeateAR/Temp/StagingArea/Data/Native/libil2cpp.so",
+   "xfrm_flags": {
+    "signed": {
+     "cert": "D:\\Clients\\Internal\\sandbox.cert"
+    },
+    "taildata": {
+     "debuggable": true,
+     "sbox": "USER",
+     "version": 3
+    }
+   },
+   "xfrm_hash": "4556cdcb34b13797e8a7608472d04d561adeb5f3",
+   "xfrm_path": "D:/Unity/IdeateAR/.out/.cache/debug_lumin_clang-3.8_aarch64/com.ideatear-0a67476e53749e5a\\libil2cpp.so-227e98f922c2022a",
+   "xfrm_size": 39770678
+  },
+  {
+   "compression": 8,
+   "hash": "972259f42344fb2ef34471beaf830c954d90a7cb",
+   "pkgpath": "bin/AudioPluginMSASpatializer.so",
+   "size": 228648,
+   "src": "D:/Unity/IdeateAR/Temp/StagingArea/Data/Plugins/AudioPluginMSASpatializer.so",
+   "xfrm_flags": {
+    "signed": {
+     "cert": "D:\\Clients\\Internal\\sandbox.cert"
+    },
+    "taildata": {
+     "debuggable": true,
+     "sbox": "USER",
+     "version": 3
+    }
+   },
+   "xfrm_hash": "0badc25b2d92d85b93c6d70e5c130655c7ba121d",
+   "xfrm_path": "D:/Unity/IdeateAR/.out/.cache/debug_lumin_clang-3.8_aarch64/com.ideatear-0a67476e53749e5a\\AudioPluginMSASpatializer.so-c72ca865186adf18",
+   "xfrm_size": 229406
+  },
+  {
+   "compression": 8,
+   "hash": "45521f76a6d5d2e9292e9a432d8ea5d87804572b",
+   "pkgpath": "bin/UnityEngine.SpatialTracking.dll",
+   "size": 9216,
+   "src": "D:/Unity/IdeateAR/Temp/StagingArea/Data/Plugins/UnityEngine.SpatialTracking.dll"
+  },
+  {
+   "compression": 8,
+   "hash": "a53101d0cf297191ed1c3db03536a24d30d63c68",
+   "pkgpath": "bin/UnityEngine.TestRunner.dll",
+   "size": 65536,
+   "src": "D:/Unity/IdeateAR/Temp/StagingArea/Data/Plugins/UnityEngine.TestRunner.dll"
+  },
+  {
+   "compression": 8,
+   "hash": "d93ff7b64d92abd6dbb8419c3348ab5f56ad5ec5",
+   "pkgpath": "bin/UnityMagicLeap.so",
+   "size": 728232,
+   "src": "D:/Unity/IdeateAR/Temp/StagingArea/Data/Plugins/UnityMagicLeap.so",
+   "xfrm_flags": {
+    "signed": {
+     "cert": "D:\\Clients\\Internal\\sandbox.cert"
+    },
+    "taildata": {
+     "debuggable": true,
+     "sbox": "USER",
+     "version": 3
+    }
+   },
+   "xfrm_hash": "155248a838c445a65fe976e60944a5f6a785a799",
+   "xfrm_path": "D:/Unity/IdeateAR/.out/.cache/debug_lumin_clang-3.8_aarch64/com.ideatear-0a67476e53749e5a\\UnityMagicLeap.so-c72ca865186adf18",
+   "xfrm_size": 728990
+  },
+  {
+   "compression": 8,
+   "hash": "f48c8c76792dc0e34d0b7926bc1442e4674734da",
+   "pkgpath": "bin/libml_camera_plugin.so",
+   "size": 14184,
+   "src": "D:/Unity/IdeateAR/Temp/StagingArea/Data/Plugins/libml_camera_plugin.so",
+   "xfrm_flags": {
+    "signed": {
+     "cert": "D:\\Clients\\Internal\\sandbox.cert"
+    },
+    "taildata": {
+     "debuggable": true,
+     "sbox": "USER",
+     "version": 3
+    }
+   },
+   "xfrm_hash": "f939939c9d3d0ecf45fdc5ffeb9d132738d246a5",
+   "xfrm_path": "D:/Unity/IdeateAR/.out/.cache/debug_lumin_clang-3.8_aarch64/com.ideatear-0a67476e53749e5a\\libml_camera_plugin.so-c72ca865186adf18",
+   "xfrm_size": 14942
+  },
+  {
+   "compression": 8,
+   "hash": "005df10cbe8c00fe62e808931de03be848a31b7e",
+   "pkgpath": "bin/libml_mediaplayer_plugin.so",
+   "size": 38792,
+   "src": "D:/Unity/IdeateAR/Temp/StagingArea/Data/Plugins/libml_mediaplayer_plugin.so",
+   "xfrm_flags": {
+    "signed": {
+     "cert": "D:\\Clients\\Internal\\sandbox.cert"
+    },
+    "taildata": {
+     "debuggable": true,
+     "sbox": "USER",
+     "version": 3
+    }
+   },
+   "xfrm_hash": "22e0a9c01d346b426975518bbadf0c9c6732fbd6",
+   "xfrm_path": "D:/Unity/IdeateAR/.out/.cache/debug_lumin_clang-3.8_aarch64/com.ideatear-0a67476e53749e5a\\libml_mediaplayer_plugin.so-c72ca865186adf18",
+   "xfrm_size": 39550
+  },
+  {
+   "compression": 8,
+   "hash": "5629c7ff5fb59ddc72778d4b9d3dbadcde480998",
+   "pkgpath": "bin/nunit.framework.dll",
+   "size": 328192,
+   "src": "D:/Unity/IdeateAR/Temp/StagingArea/Data/Plugins/nunit.framework.dll"
+  },
+  {
+   "compression": 8,
+   "hash": "e6124da6073b916e29e013cf3ae3f58a4c5fdb0e",
+   "pkgpath": "Data/Resources/mscorlib.dll-resources.dat",
+   "size": 337563,
+   "src": "D:/Unity/IdeateAR/Temp/StagingArea/Data/Resources/mscorlib.dll-resources.dat"
+  },
+  {
+   "compression": 8,
+   "hash": "dc1423ee40a78f4701880b37e1f07bc4f3500e9d",
+   "pkgpath": "Data/Resources/unity default resources",
+   "size": 3308004,
+   "src": "D:/Unity/IdeateAR/Temp/StagingArea/Data/Resources/unity default resources"
+  },
+  {
+   "compression": 8,
+   "hash": "11405a76cf4b71d658ef30e0700e36970ca39879",
+   "pkgpath": "Data/Resources/unity_builtin_extra",
+   "size": 393452,
+   "src": "D:/Unity/IdeateAR/Temp/StagingArea/Data/Resources/unity_builtin_extra"
+  },
+  {
+   "compression": 8,
+   "hash": "9bbb5e3aae616602db933abd34140e11132fccea",
+   "pkgpath": "Data/UnitySubsystems/Runtime/UnitySubsystemsManifest.json",
+   "size": 438,
+   "src": "D:/Unity/IdeateAR/Temp/StagingArea/Data/UnitySubsystems/Runtime/UnitySubsystemsManifest.json"
+  },
+  {
+   "compression": 8,
+   "hash": "3b192f047ee7ad4150db5ec1039221108a039a22",
+   "pkgpath": "Data/a02a7d8c237544f1962732b55a9aebf1",
+   "size": 14784,
+   "src": "D:/Unity/IdeateAR/Temp/StagingArea/Data/a02a7d8c237544f1962732b55a9aebf1"
+  },
+  {
+   "compression": 8,
+   "hash": "5bb31a056301902f40c0c5340d9be9df453c7f2e",
+   "pkgpath": "Data/bc1ede39bf3643ee8e493720e4259791",
+   "size": 16152,
+   "src": "D:/Unity/IdeateAR/Temp/StagingArea/Data/bc1ede39bf3643ee8e493720e4259791"
+  },
+  {
+   "compression": 8,
+   "hash": "caaf30d8a635b6b73e3f5b8ba9763683c4d51b7d",
+   "pkgpath": "Data/boot.config",
+   "size": 200,
+   "src": "D:/Unity/IdeateAR/Temp/StagingArea/Data/boot.config"
+  },
+  {
+   "compression": 8,
+   "hash": "8da1bfb81fd7ed8dc017ffdea36f8f79190b5eb9",
+   "pkgpath": "Data/c41005c129ba4d66911b75229fd70b45",
+   "size": 5776,
+   "src": "D:/Unity/IdeateAR/Temp/StagingArea/Data/c41005c129ba4d66911b75229fd70b45"
+  },
+  {
+   "compression": 8,
+   "hash": "4f7f510200d2e20178f0d456e41eae4233fe5f35",
+   "pkgpath": "Data/cf81c85f95fe47e1a27f6ae460cf182c",
+   "size": 10640,
+   "src": "D:/Unity/IdeateAR/Temp/StagingArea/Data/cf81c85f95fe47e1a27f6ae460cf182c"
+  },
+  {
+   "compression": 8,
+   "hash": "8a7800bc4fcb41cff63cf466f142d7e2a9743b69",
+   "pkgpath": "Data/d82c1b31c7e74239bff1220585707d2b",
+   "size": 4240,
+   "src": "D:/Unity/IdeateAR/Temp/StagingArea/Data/d82c1b31c7e74239bff1220585707d2b"
+  },
+  {
+   "compression": 8,
+   "hash": "8dcaf11968e0bd261732d274f404a52b93db8c40",
+   "pkgpath": "Data/d930090c0cd643c7b55f19a38538c162",
+   "size": 4120,
+   "src": "D:/Unity/IdeateAR/Temp/StagingArea/Data/d930090c0cd643c7b55f19a38538c162"
+  },
+  {
+   "compression": 8,
+   "hash": "b5a72a7f362dc35d71b29ec10b1c7086bdf73204",
+   "pkgpath": "Data/dd89cf5b9246416f84610a006f916af7",
+   "size": 18072,
+   "src": "D:/Unity/IdeateAR/Temp/StagingArea/Data/dd89cf5b9246416f84610a006f916af7"
+  },
+  {
+   "compression": 8,
+   "hash": "a87e1796d8558ea7b05654d0cfca8b9b4780cd2f",
+   "pkgpath": "Data/dffef66376be4fa480fb02b19edbe903",
+   "size": 4236,
+   "src": "D:/Unity/IdeateAR/Temp/StagingArea/Data/dffef66376be4fa480fb02b19edbe903"
+  },
+  {
+   "compression": 8,
+   "hash": "0d646d8a40d07a78ccdd1438248bc476c64bc23e",
+   "pkgpath": "Data/dffef66376be4fa480fb02b19edbe903.resS",
+   "size": 349552,
+   "src": "D:/Unity/IdeateAR/Temp/StagingArea/Data/dffef66376be4fa480fb02b19edbe903.resS"
+  },
+  {
+   "compression": 8,
+   "hash": "086e5cb0f9692f72c11c8498a19bf86e902416a2",
+   "pkgpath": "Data/e73a58f6e2794ae7b1b7e50b7fb811b0",
+   "size": 5716,
+   "src": "D:/Unity/IdeateAR/Temp/StagingArea/Data/e73a58f6e2794ae7b1b7e50b7fb811b0"
+  },
+  {
+   "compression": 8,
+   "hash": "19894d3cd441cad2cf9a124275c92595e18d5b6c",
+   "pkgpath": "Data/f7ada0af4f174f0694ca6a487b8f543d",
+   "size": 36380,
+   "src": "D:/Unity/IdeateAR/Temp/StagingArea/Data/f7ada0af4f174f0694ca6a487b8f543d"
+  },
+  {
+   "compression": 8,
+   "hash": "d9aa57bf337653d6d29fbfe30fae56df4fe4fe4b",
+   "pkgpath": "Data/f952c082cb03451daed3ee968ac6c63e",
+   "size": 6276,
+   "src": "D:/Unity/IdeateAR/Temp/StagingArea/Data/f952c082cb03451daed3ee968ac6c63e"
+  },
+  {
+   "compression": 8,
+   "hash": "6427a5fede15e510d92d9b1aaab08f71bc8da513",
+   "pkgpath": "Data/fade42e8bc714b018fac513c043d323b",
+   "size": 4408,
+   "src": "D:/Unity/IdeateAR/Temp/StagingArea/Data/fade42e8bc714b018fac513c043d323b"
+  },
+  {
+   "compression": 8,
+   "hash": "bd170839f90548e77ebd2fe0c01be86d4081f29a",
+   "pkgpath": "Data/globalgamemanagers",
+   "size": 37244,
+   "src": "D:/Unity/IdeateAR/Temp/StagingArea/Data/globalgamemanagers"
+  },
+  {
+   "compression": 8,
+   "hash": "6462243a6689222b661732e9c827bb5fca379771",
+   "pkgpath": "Data/globalgamemanagers.assets",
+   "size": 41584,
+   "src": "D:/Unity/IdeateAR/Temp/StagingArea/Data/globalgamemanagers.assets"
+  },
+  {
+   "compression": 8,
+   "hash": "1a03c2bd0051f9871eacabbd4ee61f6a84c8db06",
+   "pkgpath": "Data/level0",
+   "size": 12792,
+   "src": "D:/Unity/IdeateAR/Temp/StagingArea/Data/level0"
+  },
+  {
+   "compression": 8,
+   "hash": "571eb12d7aa87ae03ccce926de7eeb72c32917fb",
+   "pkgpath": "Data/level0.resS",
+   "size": 131232,
+   "src": "D:/Unity/IdeateAR/Temp/StagingArea/Data/level0.resS"
+  },
+  {
+   "compression": 8,
+   "hash": "c3ca374b44b94597d552bb66060b5e0c20341498",
+   "pkgpath": "Data/sharedassets0.assets",
+   "size": 565452,
+   "src": "D:/Unity/IdeateAR/Temp/StagingArea/Data/sharedassets0.assets"
+  },
+  {
+   "compression": 8,
+   "hash": "175862a8c9b7bfd142a9cd0e6bca6f7e87b6af73",
+   "pkgpath": "Data/sharedassets0.assets.resS",
+   "size": 3145728,
+   "src": "D:/Unity/IdeateAR/Temp/StagingArea/Data/sharedassets0.assets.resS"
+  },
+  {
+   "compression": 8,
+   "hash": "84ec17ea61ab6f9be72924aae6bd1a69ef6a25b8",
+   "pkgpath": "bin/Player.elf",
+   "size": 30973768,
+   "src": "D:/Unity/IdeateAR/Temp/StagingArea/Player.elf",
+   "xfrm_flags": {
+    "signed": {
+     "cert": "D:\\Clients\\Internal\\sandbox.cert"
+    },
+    "taildata": {
+     "debuggable": true,
+     "sbox": "USER",
+     "version": 3
+    }
+   },
+   "xfrm_hash": "4cf40386c8184a66f06464ce56eb40410c7dac9e",
+   "xfrm_path": "D:/Unity/IdeateAR/.out/.cache/debug_lumin_clang-3.8_aarch64/com.ideatear-0a67476e53749e5a\\Player.elf-f5b666b56320510d",
+   "xfrm_size": 30974526
+  },
+  {
+   "compression": 8,
+   "hash": "7b270230451858b1fe9249587bff7c63c2f10140",
+   "pkgpath": "manifest.xml",
+   "size": 1068,
+   "src": "D:\\Unity\\IdeateAR\\Temp\\StagingArea\\manifest.xml",
+   "xfrm_flags": {
+    "manifest": {
+     "cert_hash": "b113cd2f053f9ee0efc42b075be7adade923daa5",
+     "developer_id": "e9893cd4-3233-40d7-9400-5dc5882753ad"
+    }
+   },
+   "xfrm_hash": "a9d77e8636814a02d65010e6d8f32159a712877e",
+   "xfrm_path": "D:/Unity/IdeateAR/.out/.cache/debug_lumin_clang-3.8_aarch64/com.ideatear-0a67476e53749e5a\\manifest.xml-f5b666b56320510d",
+   "xfrm_size": 1080
+  }
+ ],
+ "pkgflags": {
+  "signed": {
+   "cert": "D:\\Clients\\Internal\\sandbox.cert"
+  },
+  "taildata": {
+   "debuggable": true,
+   "devcert": "D:\\Clients\\Internal\\sandbox.cert",
+   "sbox": "USER",
+   "version": 3
+  }
+ }
+}
