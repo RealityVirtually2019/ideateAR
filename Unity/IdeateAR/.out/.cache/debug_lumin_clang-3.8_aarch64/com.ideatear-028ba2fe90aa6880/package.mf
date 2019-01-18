@@ -43,7 +43,7 @@
   },
   {
    "compression": 8,
-   "hash": "03e1338d500b44c07755b1e425706da0199f0439",
+   "hash": "321c5191c4e339d63ae4a38fd0116a415baaa7b2",
    "pkgpath": "Data/3f5b5dff67a942289a9defa416b206f3",
    "size": 4344,
    "src": "D:/code/ideateAR/Unity/IdeateAR/Temp/StagingArea/Data/3f5b5dff67a942289a9defa416b206f3"
@@ -64,14 +64,14 @@
   },
   {
    "compression": 8,
-   "hash": "fc07d64074fa6e0de35c1572f34c83761283946a",
+   "hash": "04dcf88b95670df3c4455f15e4ca52cc6edb21b4",
    "pkgpath": "Data/68e6db2ebdc24f95958faec2be5558d6",
    "size": 18080,
    "src": "D:/code/ideateAR/Unity/IdeateAR/Temp/StagingArea/Data/68e6db2ebdc24f95958faec2be5558d6"
   },
   {
    "compression": 8,
-   "hash": "6ce06ee917832b0089e1d6c79043caf9262ddbfe",
+   "hash": "43654205f9bc08f9e9f5ea18e347b9041782ab7e",
    "pkgpath": "Data/79459efec17a4d00a321bdcc27bbc385",
    "size": 5648,
    "src": "D:/code/ideateAR/Unity/IdeateAR/Temp/StagingArea/Data/79459efec17a4d00a321bdcc27bbc385"
@@ -85,16 +85,16 @@
   },
   {
    "compression": 8,
-   "hash": "825206e59326c3f31516be4e820448f720da9be3",
+   "hash": "1e0d73a9ab9388b553bfa0a130ac455cb88fd23b",
    "pkgpath": "Data/Managed/Metadata/global-metadata.dat",
-   "size": 3195556,
+   "size": 3178332,
    "src": "D:/code/ideateAR/Unity/IdeateAR/Temp/StagingArea/Data/Managed/Metadata/global-metadata.dat"
   },
   {
    "compression": 8,
-   "hash": "9c4b041bad792f267ce34d0d1b1e96de14717fa9",
+   "hash": "44d6ba8024656209450d0dcac7e98d68345e730e",
    "pkgpath": "bin/libil2cpp.so",
-   "size": 39768152,
+   "size": 39768728,
    "src": "D:/code/ideateAR/Unity/IdeateAR/Temp/StagingArea/Data/Native/libil2cpp.so",
    "xfrm_flags": {
     "signed": {
@@ -106,9 +106,9 @@
      "version": 3
     }
    },
-   "xfrm_hash": "1752403cd41da026a9d29d27e64b4abf55ce9acd",
+   "xfrm_hash": "9bd19732427b126dcd8ece18fa20a1a7db6d4f5e",
    "xfrm_path": "D:/code/ideateAR/Unity/IdeateAR/.out/.cache/debug_lumin_clang-3.8_aarch64/com.ideatear-028ba2fe90aa6880\\libil2cpp.so-20ea9a68d03b9eb7",
-   "xfrm_size": 39768910
+   "xfrm_size": 39769486
   },
   {
    "compression": 8,
@@ -290,7 +290,7 @@
   },
   {
    "compression": 8,
-   "hash": "a71c43d861a4dd953272b816c7025301a4a2173b",
+   "hash": "ba708357e34e4be589b45bf23f7643e927b5088f",
    "pkgpath": "Data/dd89cf5b9246416f84610a006f916af7",
    "size": 18072,
    "src": "D:/code/ideateAR/Unity/IdeateAR/Temp/StagingArea/Data/dd89cf5b9246416f84610a006f916af7"
@@ -311,7 +311,7 @@
   },
   {
    "compression": 8,
-   "hash": "8b9e9ce656441e24d8ad01a23466722ef15b584e",
+   "hash": "254a8d283ff73b29a9c64cd51f22c859a0d9e6a8",
    "pkgpath": "Data/e73a58f6e2794ae7b1b7e50b7fb811b0",
    "size": 5716,
    "src": "D:/code/ideateAR/Unity/IdeateAR/Temp/StagingArea/Data/e73a58f6e2794ae7b1b7e50b7fb811b0"
@@ -339,7 +339,7 @@
   },
   {
    "compression": 8,
-   "hash": "ff5e13364842cd3b4b4e2ccaa210c7b247d40900",
+   "hash": "ff5d70f3bfe4a3470a78390560665777dd70678d",
    "pkgpath": "Data/globalgamemanagers",
    "size": 37276,
    "src": "D:/code/ideateAR/Unity/IdeateAR/Temp/StagingArea/Data/globalgamemanagers"
@@ -353,9 +353,9 @@
   },
   {
    "compression": 8,
-   "hash": "7637e92093e4ed188c358a65b2425150b35557cd",
+   "hash": "efa12f8cfccd966a9d7e5daaec18c94cfb61d8f2",
    "pkgpath": "Data/level0",
-   "size": 12804,
+   "size": 21100,
    "src": "D:/code/ideateAR/Unity/IdeateAR/Temp/StagingArea/Data/level0"
   },
   {
@@ -367,16 +367,16 @@
   },
   {
    "compression": 8,
-   "hash": "0d7025c882f53fed062f905e619d24b47c2063ac",
+   "hash": "c311ed5d218050ee765c9e63036805186978886d",
    "pkgpath": "Data/sharedassets0.assets",
-   "size": 564324,
+   "size": 1159236,
    "src": "D:/code/ideateAR/Unity/IdeateAR/Temp/StagingArea/Data/sharedassets0.assets"
   },
   {
    "compression": 8,
-   "hash": "175862a8c9b7bfd142a9cd0e6bca6f7e87b6af73",
+   "hash": "b56afbad12c06318b1ea293c2eb20adf0b63efbe",
    "pkgpath": "Data/sharedassets0.assets.resS",
-   "size": 3145728,
+   "size": 3670016,
    "src": "D:/code/ideateAR/Unity/IdeateAR/Temp/StagingArea/Data/sharedassets0.assets.resS"
   },
   {
