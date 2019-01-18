@@ -1,0 +1,19 @@
+<manifest xmlns:ml="magicleap" ml:developer_id="e9893cd4-3233-40d7-9400-5dc5882753ad" ml:package="com.ideatear" ml:version_code="1" ml:version_name="">
+  <application ml:min_api_level="2" ml:sdk_version="1.0" ml:visible_name="IdeateAR">
+    <uses-privilege ml:name="LowLatencyLightwear" />
+    <uses-privilege ml:name="AudioCaptureMic" />
+    <uses-privilege ml:name="CameraCapture" />
+    <uses-privilege ml:name="ControllerPose" />
+    <uses-privilege ml:name="GesturesConfig" />
+    <uses-privilege ml:name="GesturesSubscribe" />
+    <uses-privilege ml:name="Internet" />
+    <uses-privilege ml:name="LocalAreaNetwork" />
+    <uses-privilege ml:name="WorldReconstruction" />
+    <uses-privilege ml:name="BackgroundDownload" />
+    <uses-privilege ml:name="BackgroundUpload" />
+    <uses-privilege ml:name="VoiceInput" />
+    <component ml:binary_name="bin/Player.elf" ml:name=".fullscreen" ml:type="Fullscreen" ml:visible_name="IdeateAR">
+      <icon ml:model_folder="Icon/Model" ml:portal_folder="Icon/Portal" />
+    </component>
+  </application>
+</manifest>

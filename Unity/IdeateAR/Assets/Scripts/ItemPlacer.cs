@@ -35,6 +35,10 @@ public class ItemPlacer : MonoBehaviour
             SocketClient.log("Pinch Start");
             SocketClient.send("q");
             isWaiting = true;
+
+            noteObject = Instantiate<GameObject>(StickyNotePrefab);
+            noteObject.transform.localPosition = Vector3.zero;
+            isPlacing = true;
         }
 
         if(!isPinching && wasPinching)
@@ -48,13 +52,9 @@ public class ItemPlacer : MonoBehaviour
 
         if(isWaiting && SocketClient.Instance.IsNewMessage)
         {
-            var newMessage = SocketClient.Instance.LastMessage;
-            noteObject = Instantiate<GameObject>(StickyNotePrefab);
-            noteObject.GetComponent<StickyNote>().Text = newMessage;
-            noteObject.transform.localPosition = Vector3.zero;
-
-            isPlacing = true;
             isWaiting = false;
+
+            noteObject.GetComponent<StickyNote>().Text = SocketClient.Instance.LastMessage;
         }
 
         if(isPlacing && noteObject != null)

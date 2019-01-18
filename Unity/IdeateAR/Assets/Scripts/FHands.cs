@@ -40,7 +40,8 @@ public class FHand
             var newPose = hand.KeyPose;
             if (hand.KeyPoseConfidence > settings.MinConfidence && newPose != currentPose && PoseDuration > settings.BounceTime)
             {
-               
+                //SocketClient.log("Pose duration: " + PoseDuration);
+                lastPoseTime = Time.time;
                 currentPose = newPose;
             }
 
