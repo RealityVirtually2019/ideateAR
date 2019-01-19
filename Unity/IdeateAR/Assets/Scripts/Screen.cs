@@ -29,7 +29,7 @@ public class Screen : MonoBehaviour
     ContentType contentType;
     FVector handCenter = new FVector();
 
-    string screenId;
+    public string ScreenId;
     GameObject mediaRequestor;
     bool requestPending;
     bool expectingImageData;
@@ -38,7 +38,7 @@ public class Screen : MonoBehaviour
     
     public void SetParams(string id, string screenTypeKey, string contentTypeKey)
     {
-        screenId = id;
+        ScreenId = id;
 
         switch(screenTypeKey)
         {
@@ -65,7 +65,7 @@ public class Screen : MonoBehaviour
                 break;
         }
 
-        IDLabel.text = screenId + "\n" + screenType + " - " + contentType;
+        IDLabel.text = ScreenId + "\n" + screenType + " - " + contentType;
     }
 
     private void Update()
@@ -78,7 +78,7 @@ public class Screen : MonoBehaviour
 
         if(SocketClient.Instance.IsNewMessage)
         {
-            if (SocketClient.Instance.Sender == screenId || contentType == ContentType.Model)
+            if (SocketClient.Instance.Sender == ScreenId || contentType == ContentType.Model)
             {
                 if (expectingImageData && requestPending)
                 {
@@ -116,7 +116,7 @@ public class Screen : MonoBehaviour
                 spawnExcelDoc();
                 break;
             case ContentType.Drawing:
-                SocketClient.Instance.Send("q", screenId);
+                SocketClient.Instance.Send("q", ScreenId);
                 requestPending = true;
                 break;
         }

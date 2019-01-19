@@ -85,16 +85,16 @@
   },
   {
    "compression": 8,
-   "hash": "df49d7450593f224a47d65f5690d380f73628cd1",
+   "hash": "ce4ade1fec80d1c13c7de5183db721fcc539e0bc",
    "pkgpath": "Data/Managed/Metadata/global-metadata.dat",
-   "size": 3184932,
+   "size": 3185204,
    "src": "D:/code/ideateAR/Unity/IdeateAR/Temp/StagingArea/Data/Managed/Metadata/global-metadata.dat"
   },
   {
    "compression": 8,
-   "hash": "2dfb27e5e14cfd6b591689d702ec045ba2f2cc3b",
+   "hash": "887c2e02e093dbf0d46199a2d224e4296be02e04",
    "pkgpath": "bin/libil2cpp.so",
-   "size": 39819096,
+   "size": 39824112,
    "src": "D:/code/ideateAR/Unity/IdeateAR/Temp/StagingArea/Data/Native/libil2cpp.so",
    "xfrm_flags": {
     "signed": {
@@ -106,9 +106,9 @@
      "version": 3
     }
    },
-   "xfrm_hash": "39e4fa82618e063ccd1c5442d1ac033320d606e0",
+   "xfrm_hash": "7777f072bce49244ec603f5acba93cc62ecc23d6",
    "xfrm_path": "D:/code/ideateAR/Unity/IdeateAR/.out/.cache/debug_lumin_clang-3.8_aarch64/com.ideatear-028ba2fe90aa6880\\libil2cpp.so-20ea9a68d03b9eb7",
-   "xfrm_size": 39819854
+   "xfrm_size": 39824870
   },
   {
    "compression": 8,
@@ -339,14 +339,14 @@
   },
   {
    "compression": 8,
-   "hash": "5d76983e77899259ee1d2a43baa53f2445bdeb0f",
+   "hash": "e9613b3d0a4ff04455170bcad60478309f832136",
    "pkgpath": "Data/globalgamemanagers",
-   "size": 37388,
+   "size": 37404,
    "src": "D:/code/ideateAR/Unity/IdeateAR/Temp/StagingArea/Data/globalgamemanagers"
   },
   {
    "compression": 8,
-   "hash": "96f724d0e4e5e3da13c49989d561634cf8968529",
+   "hash": "aa9584f31a3ea8bca3f26505ff510652478162ca",
    "pkgpath": "Data/globalgamemanagers.assets",
    "size": 41808,
    "src": "D:/code/ideateAR/Unity/IdeateAR/Temp/StagingArea/Data/globalgamemanagers.assets"
@@ -367,9 +367,9 @@
   },
   {
    "compression": 8,
-   "hash": "f3078957117b33f361236a7ccdf5c9290b492302",
+   "hash": "70ebdb0b21f9db57544cc055fce66fe39eef30c8",
    "pkgpath": "Data/sharedassets0.assets",
-   "size": 1163444,
+   "size": 1163452,
    "src": "D:/code/ideateAR/Unity/IdeateAR/Temp/StagingArea/Data/sharedassets0.assets"
   },
   {

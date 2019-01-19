@@ -34,6 +34,23 @@ public class ItemPlacer : MonoBehaviour
             this.transform.Clear();
         }
     }
+
+    Screen findTargetScreen()
+    {
+        RaycastHit hitInfo;
+        Screen selectedScreen = null;
+
+        var hits = Physics.BoxCastAll(Camera.main.transform.position, Vector3.one * 0.05f, Camera.main.transform.forward, Quaternion.identity, 2);
+        foreach(var hit in hits)
+        {
+            if(hit.collider.gameObject.tag == "screen")
+            {
+                selectedScreen = hit.collider.gameObject.GetComponent<Screen>();
+                SocketClient.log(hit.distance.ToString());
+            }
+        }
+        return selectedScreen;
+    }
     	
 	void Update ()
     {
@@ -47,10 +64,11 @@ public class ItemPlacer : MonoBehaviour
             //Pinch start          
             SocketClient.log("Item Placer sees pinch looking for a screen");
             //figure out who to ask for content
-            var screen = GameObject.FindObjectOfType<Screen>(); //TODO: actually hook this up, instaed of assuming theres just one
+            var screen = findTargetScreen(); //GameObject.FindObjectOfType<Screen>(); //TODO: actually hook this up, instaed of assuming theres just one
+
             if (screen != null)
             {
-                SocketClient.log("ItemPlacer requesting media");
+                SocketClient.log("ItemPlacer requesting media from " + screen.ScreenId);
                 screen.RequestMedia(this.gameObject);
 
                 //Spawn pending indicator while we wait for actual media

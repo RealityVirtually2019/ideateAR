@@ -25,7 +25,7 @@ GameObject:
   - component: {fileID: 114168562018512388}
   m_Layer: 0
   m_Name: Screen
-  m_TagString: Untagged
+  m_TagString: screen
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
