@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.XR.MagicLeap;
 
 public enum AppModeEnum
 {
@@ -17,9 +18,20 @@ public class AppController : MonoBehaviour
     public TextMeshPro ControllerLabel;
     public GameObject ScreenPrefab;
     public AppModeEnum CurrentMode;
-    
 
-	void Start ()
+    bool wasPinching;
+
+    public bool isPinchStart;
+    public bool isPinchEnd;
+    public bool isPinching;
+    public bool isPinchHandled;
+
+    MLHand mlhand { get { return MLHands.Right; } }
+    FHand fhand { get { return FHands.Right; } }
+
+    public FVector PinchPoint = new FVector();
+
+    void Start ()
     {
         Instance = this;
         SetMode(AppModeEnum.Normal);
@@ -27,6 +39,18 @@ public class AppController : MonoBehaviour
 
     private void Update()
     {
+        bool isPinching = fhand.KeyPose == MLHandKeyPose.Pinch;
+
+        isPinchHandled = false;
+        isPinchStart = isPinching && !wasPinching;
+        isPinchEnd = !isPinching && wasPinching;
+
+        var pinchPoint = Vector3.Lerp(mlhand.Index.Tip.Position, mlhand.Thumb.Tip.Position, 0.5f);
+        if (isPinchStart)
+            PinchPoint.Value = Vector3.Lerp(mlhand.Index.Tip.Position, mlhand.Thumb.Tip.Position, 0.5f);
+        else if (isPinching)
+            PinchPoint.Push(pinchPoint);
+
         if (SocketClient.Instance.IsNewMessage)
         {
             if(SocketClient.Instance.LastMessage.StartsWith("enroll"))
@@ -43,6 +67,8 @@ public class AppController : MonoBehaviour
                 SceneManager.LoadScene(0);
             }
         }
+
+        wasPinching = isPinching;
     }
 
     public void SetMode(AppModeEnum newMode)
