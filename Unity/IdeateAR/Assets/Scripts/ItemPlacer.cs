@@ -36,7 +36,7 @@ public class ItemPlacer : MonoBehaviour
 
     Screen findTargetScreen()
     {
-        RaycastHit hitInfo;
+        /*RaycastHit hitInfo;
         
         if(Physics.Raycast(new Ray(Camera.main.transform.position, Camera.main.transform.forward), out hitInfo))
         {
@@ -44,7 +44,14 @@ public class ItemPlacer : MonoBehaviour
             {
                 return hitInfo.collider.gameObject.GetComponent<Screen>();
             }
+        }*/
+
+        var screens = GameObject.FindObjectsOfType<Screen>();
+        foreach(var screen in screens)
+        {
+            if (screen.IsPointerInRange) return screen;
         }
+
         return null;
     }
     	
@@ -70,6 +77,7 @@ public class ItemPlacer : MonoBehaviour
                 itemObject.transform.SetParent(this.transform);
                 itemObject.transform.localPosition = Vector3.zero;
                 isPlacing = true;
+                AppController.Instance.isPinchHandled = true;
             }
             else SocketClient.log("Couldnt find a screen to pull media from");
         }
@@ -77,6 +85,9 @@ public class ItemPlacer : MonoBehaviour
         if(AppController.Instance.isPinchEnd)
         {
             //Pinch end
+
+            itemObject.transform.SetParent(AppController.Instance.ActiveNucleus);
+
             isPending = false;
             isPlacing = false;
             itemObject = null;

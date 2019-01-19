@@ -15,6 +15,8 @@ public class AppController : MonoBehaviour
 {
     public static AppController Instance;
 
+    public Transform PinchPointer;
+    public Transform ActiveNucleus;
     public TextMeshPro ControllerLabel;
     public GameObject ScreenPrefab;
     public AppModeEnum CurrentMode;
@@ -47,9 +49,12 @@ public class AppController : MonoBehaviour
 
         var pinchPoint = Vector3.Lerp(mlhand.Index.Tip.Position, mlhand.Thumb.Tip.Position, 0.5f);
         if (isPinchStart)
+        {
             PinchPoint.Value = Vector3.Lerp(mlhand.Index.Tip.Position, mlhand.Thumb.Tip.Position, 0.5f);
-        else if (isPinching)
-            PinchPoint.Push(pinchPoint);
+        }
+        
+        PinchPoint.Push(pinchPoint);
+        PinchPointer.position = PinchPoint.Value;
 
         if (SocketClient.Instance.IsNewMessage)
         {

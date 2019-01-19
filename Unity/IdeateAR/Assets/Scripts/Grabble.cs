@@ -9,20 +9,25 @@ public class Grabble : MonoBehaviour
     bool isGrabbed;
     GameObject proxyObject;
     Transform originalParent;
+    Rigidbody body;
+
+    bool isPointerInRange = false;
 
 	void Start ()
     {
         var collider = GetComponent<SphereCollider>();
         radius = collider.radius;
-	}
+        body = GetComponent<Rigidbody>();
+    }
 	
 	void Update ()
     {
         if(AppController.Instance.isPinchStart && !AppController.Instance.isPinchHandled)
         {
             var pinchPoint = AppController.Instance.PinchPoint.Value;
-            var localPoint = transform.InverseTransformPoint(pinchPoint);
-            if (localPoint.magnitude <= radius)
+            //var localPoint = transform.InverseTransformPoint(pinchPoint);
+            //if (localPoint.magnitude <= radius)
+            if(isPointerInRange)
             {
                 isGrabbed = true;
                 AppController.Instance.isPinchHandled = true;
@@ -30,6 +35,8 @@ public class Grabble : MonoBehaviour
                 proxyObject.transform.position = pinchPoint;
                 originalParent = transform.parent;
                 transform.SetParent(proxyObject.transform, true);
+
+                if(body != null) body.isKinematic = true;
             }
         }
 
@@ -40,10 +47,27 @@ public class Grabble : MonoBehaviour
 
         if(AppController.Instance.isPinchEnd && isGrabbed)
         {
+            if (body != null) body.isKinematic = false;
             transform.SetParent(originalParent, true);
             originalParent = null;
             Destroy(proxyObject);
             proxyObject = null;
         }
 	}
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if(other.gameObject.tag == "pointer")
+        {
+            isPointerInRange = true;
+        }
+    }
+
+    private void OnTriggerExit(Collider other)
+    {
+        if(other.gameObject.tag == "pointer")
+        {
+            isPointerInRange = false;
+        }
+    }
 }

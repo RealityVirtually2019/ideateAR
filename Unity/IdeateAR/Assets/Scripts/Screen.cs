@@ -29,12 +29,14 @@ public class Screen : MonoBehaviour
     ContentType contentType;
     FVector handCenter = new FVector();
 
+    public bool IsPointerInRange = false;
     public string ScreenId;
     GameObject mediaRequestor;
     bool requestPending;
     bool expectingImageData;
     string modelId;
     string mediaType;
+    
     
     public void SetParams(string id, string screenTypeKey, string contentTypeKey)
     {
@@ -44,8 +46,8 @@ public class Screen : MonoBehaviour
         {
             case "mobile":
                 this.screenType = ScreenTypeEnum.Mobile;
-                transform.localScale = Vector3.one * 0.3f;
-                GetComponent<MeshRenderer>().enabled = false;
+                transform.localScale = Vector3.one * 0.2f;
+                //GetComponent<MeshRenderer>().enabled = false;
                 break;
             case "static":
                 this.screenType = ScreenTypeEnum.Static;
@@ -152,5 +154,21 @@ public class Screen : MonoBehaviour
         int index = int.Parse(modelId) - 1;
         var itemObject = Instantiate<GameObject>(Models[index]);
         mediaRequestor.SendMessage("mediaReady", itemObject);
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.tag == "pointer")
+        {
+            IsPointerInRange = true;
+        }
+    }
+
+    private void OnTriggerExit(Collider other)
+    {
+        if (other.gameObject.tag == "pointer")
+        {
+            IsPointerInRange = false;
+        }
     }
 }
