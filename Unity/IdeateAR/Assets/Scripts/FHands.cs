@@ -5,7 +5,7 @@ using UnityEngine.XR.MagicLeap;
 
 public class FilterSettings
 {
-    public float BounceTime = 1f;
+    public float BounceTime = 0.25f;
     public float MinConfidence = 0.5f;
 }
 
@@ -61,5 +61,26 @@ public class FHand
     {
         this.hand = hand;
         this.settings = settings;
+    }
+}
+
+public class FVector
+{
+    public Vector3 Value;
+
+    public FVector()
+    {
+
+    }
+
+    public FVector(Vector3 initial)
+    {
+        Value = initial;
+    }
+
+    public void Push(Vector3 input)
+    {
+        Value = Vector3.Lerp(Value, input, 0.5f);
+        //Value = input;
     }
 }

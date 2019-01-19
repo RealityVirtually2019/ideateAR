@@ -17,6 +17,7 @@ public class SocketClient : MonoBehaviour
 
     public string LastMessage;
     public bool IsNewMessage;
+    public string Sender;
 
     void Start()
     {
@@ -40,7 +41,10 @@ public class SocketClient : MonoBehaviour
             if (!string.IsNullOrEmpty(socketMessage))
             {
                 if(socketMessage.Length < 50) StatusLabel.text = "< " + socketMessage;
-                LastMessage = socketMessage;
+                // 123|this is the payload
+                int firstDelimiter = socketMessage.IndexOf('|');
+                Sender = socketMessage.Substring(0, firstDelimiter);
+                LastMessage = socketMessage.Substring(firstDelimiter+1);
                 socketMessage = null;
                 IsNewMessage = true;
             }
@@ -52,10 +56,14 @@ public class SocketClient : MonoBehaviour
         SocketClient.Instance.Send(message);
     }
 
-    public void Send(string message)
+    public void Send(string message, string target = null)
     {
         StatusLabel.text = "> " + message;
-        if (socket.ReadyState == WebSocketState.Open) socket.SendAsync(message, i => { });
+        if (socket.ReadyState == WebSocketState.Open)
+        {
+            if (!string.IsNullOrEmpty(target)) message = ">" + target + "|" + message;
+            socket.SendAsync(message, i => { });
+        }
     }
 
     public static void log(string message)
@@ -65,14 +73,11 @@ public class SocketClient : MonoBehaviour
 
     public void Log(string message)
     {
-        Send("l," + message);
+        Send("l|" + message);
     }
 
     private void Socket_OnMessage(object sender, MessageEventArgs e)
     {
-        Debug.Log("Message received: " + e.Data);
-        //socket.Send("Unity says oi");
-
         lock (messageLock)
         {
             socketMessage = e.Data;
