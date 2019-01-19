@@ -76,29 +76,22 @@ public class Screen : MonoBehaviour
             transform.position = handCenter.Value;
         }
 
-
         if(SocketClient.Instance.IsNewMessage)
         {
             if (SocketClient.Instance.Sender == screenId || contentType == ContentType.Model)
             {
-                SocketClient.log("Screen sees a msg its interested in");
-
                 if (expectingImageData && requestPending)
                 {
-                    SocketClient.log("Screen got image data");
                     spawnImage(SocketClient.Instance.LastMessage);
                 }
                 else if (SocketClient.Instance.LastMessage.StartsWith("media"))
                 {
-                    SocketClient.log("Screen sees a media msg");
                     var tokens = SocketClient.Instance.LastMessage.Split('|');
                     mediaType = tokens[1];
 
-                    SocketClient.log("Screen media type " + mediaType);
                     switch (mediaType)
                     {
                         case "img":
-                            SocketClient.log("Screen is waiting on image data");
                             expectingImageData = true;
                             break;
                         case "model":
@@ -106,16 +99,12 @@ public class Screen : MonoBehaviour
                             break;
                     }
                 }
-
-                
             }
         }
     }
 
     public void RequestMedia(GameObject requestor)
     {
-        SocketClient.log("Screen sees media request from " + requestor.name);
-
         mediaRequestor = requestor;
 
         switch(contentType)
@@ -127,7 +116,6 @@ public class Screen : MonoBehaviour
                 spawnExcelDoc();
                 break;
             case ContentType.Drawing:
-                SocketClient.log("sending query request");
                 SocketClient.Instance.Send("q", screenId);
                 requestPending = true;
                 break;
@@ -147,8 +135,6 @@ public class Screen : MonoBehaviour
         var itemObject = Instantiate<GameObject>(ImageBlockPrefab);
         imageData = imageData.Substring("data:image/png;base64,".Length);
 
-        SocketClient.log("spawning image " + imageData);
-
         byte[] bytes = System.Convert.FromBase64String(imageData);
 
         var tex = new Texture2D(1, 1);
@@ -157,16 +143,13 @@ public class Screen : MonoBehaviour
         tex.Apply();
         renderer.material.mainTexture = tex;
 
-        SocketClient.log("Image block created. sending back to item placer " + mediaRequestor.name);
         mediaRequestor.SendMessage("mediaReady", itemObject);
     }
 
     void spawnModel(string modelId)
     {
         int index = int.Parse(modelId) - 1;
-        SocketClient.log("Spawning model " + index);
         var itemObject = Instantiate<GameObject>(Models[index]);
-
         mediaRequestor.SendMessage("mediaReady", itemObject);
     }
 }

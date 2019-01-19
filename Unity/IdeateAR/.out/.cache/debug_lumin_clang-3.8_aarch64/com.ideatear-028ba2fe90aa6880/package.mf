@@ -85,16 +85,16 @@
   },
   {
    "compression": 8,
-   "hash": "c7f3ce25f05ce216c16f885c5dab60a9fdabe2d4",
+   "hash": "df49d7450593f224a47d65f5690d380f73628cd1",
    "pkgpath": "Data/Managed/Metadata/global-metadata.dat",
-   "size": 3185380,
+   "size": 3184932,
    "src": "D:/code/ideateAR/Unity/IdeateAR/Temp/StagingArea/Data/Managed/Metadata/global-metadata.dat"
   },
   {
    "compression": 8,
-   "hash": "9263c6b4909661d3fbad1c1da74ca0b6adfa5d04",
+   "hash": "2dfb27e5e14cfd6b591689d702ec045ba2f2cc3b",
    "pkgpath": "bin/libil2cpp.so",
-   "size": 39824008,
+   "size": 39819096,
    "src": "D:/code/ideateAR/Unity/IdeateAR/Temp/StagingArea/Data/Native/libil2cpp.so",
    "xfrm_flags": {
     "signed": {
@@ -106,9 +106,9 @@
      "version": 3
     }
    },
-   "xfrm_hash": "580da60bc7165425cbab2b9ea3bd5e722abe5fa0",
+   "xfrm_hash": "39e4fa82618e063ccd1c5442d1ac033320d606e0",
    "xfrm_path": "D:/code/ideateAR/Unity/IdeateAR/.out/.cache/debug_lumin_clang-3.8_aarch64/com.ideatear-028ba2fe90aa6880\\libil2cpp.so-20ea9a68d03b9eb7",
-   "xfrm_size": 39824766
+   "xfrm_size": 39819854
   },
   {
    "compression": 8,
@@ -339,7 +339,7 @@
   },
   {
    "compression": 8,
-   "hash": "3e3ffa69eb3a6ef1461581ff5b252ca59a8493c3",
+   "hash": "5d76983e77899259ee1d2a43baa53f2445bdeb0f",
    "pkgpath": "Data/globalgamemanagers",
    "size": 37388,
    "src": "D:/code/ideateAR/Unity/IdeateAR/Temp/StagingArea/Data/globalgamemanagers"
