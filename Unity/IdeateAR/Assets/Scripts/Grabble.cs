@@ -7,6 +7,7 @@ public class Grabble : MonoBehaviour
 {
     public bool Deletable = true;
     public bool Reorient = true;
+    public bool KeepVertical = false;
 
     float radius;
     bool isGrabbed;
@@ -49,7 +50,9 @@ public class Grabble : MonoBehaviour
 
             if(Reorient)
             {
-                var rot = Quaternion.LookRotation(Camera.main.transform.position - transform.position);
+                var v = Camera.main.transform.position - transform.position;
+                if (KeepVertical) v.y = 0;
+                var rot = Quaternion.LookRotation(v);
                 transform.rotation = Quaternion.Slerp(transform.rotation, rot, 0.1f);
             }
         }
