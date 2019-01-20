@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" /> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>IdeateAR</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <h1>IdeateAR</h1>
+    
+    <div id="splash">
+      <h2>Lets get started</h2>
+      
+      <h3>What type of screen is this?</h3>
+      <div>
+        <input type="radio" name="screentype" value="mobile" checked>Mobile<br>
+        <input type="radio" name="screentype" value="static">Static<br>
+      </div>
+      
+      <h3>What type of content?</h3>
+      <div>
+        <input type="radio" name="contenttype" value="drawing" checked>Sticky Note</input>
+        <input type="radio" name="contenttype" value="model">Models</input>
+        <input type="radio" name="contenttype" value="excel">Excel</input>
+      </div>
+      
+      
+      <button onclick="enroll()">Lets go</button>
+      
+      <div style="display:block;margin-top:50px;">
+        <button onclick="send('reset')">Hard(ish) Reset</button>
+        <button onclick="send('softreset')">Soft Reset</button>
+      </div>
+    </div>
+    
+    <div id="drawing" style="display:none">
+      <h2>Send</h2>
+      Text: <input type="text" value="Hello" id="textBox"></input>
+      Target: <input type="text" id="target"></input>
+      <button onclick="clearCanvas()">Clear it</button>  
+      <button onclick="sendMessage()">Send</button>
+
+      <canvas id="drawingCanvas" width="400px" height="500px" style="border:2px solid black;display:block;"></canvas>
+    </div>
+
+    <div id="other" style="display:none;">
+      <h2 id="otherTitle"></h2>  
+      <div>Navigate to your content</div>
+    </div>
+
+    <script src="lib/reconnecting-websocket.js"></script>
+    <script src="script.js"></script>
+    <script src="drawing.js"></script>
+  </body>
+</html>
