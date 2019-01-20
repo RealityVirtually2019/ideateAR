@@ -6,6 +6,7 @@ using UnityEngine.XR.MagicLeap;
 public class Grabble : MonoBehaviour
 {
     public bool Deletable = true;
+    public bool Reorient = true;
 
     float radius;
     bool isGrabbed;
@@ -45,6 +46,12 @@ public class Grabble : MonoBehaviour
         if(isGrabbed)
         {
             proxyObject.transform.position = AppController.Instance.PinchPoint.Value;
+
+            if(Reorient)
+            {
+                var rot = Quaternion.LookRotation(Camera.main.transform.position - transform.position);
+                transform.rotation = Quaternion.Slerp(transform.rotation, rot, 0.1f);
+            }
         }
 
         if(AppController.Instance.isPinchEnd && isGrabbed)
