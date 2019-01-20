@@ -1,7 +1,9 @@
 ﻿var socket = null;
-var foundEl = null;
+var overElem = null;
 var posX = null;
 var posY = null;
+var selElem = null; // store the currently selected element
+var origBorder = "";    // stores the border settings of the selected element
 
 if (document.readyState != 'loading') ready();
 else document.addEventListener('DOMContentLoaded', ready);
@@ -13,7 +15,6 @@ function ready()
 
   socket.onopen = function(evt) 
   {
-    socket.send("enroll|static|drawing");
     console.log('Web socket opened: ' + url);
   };
 
@@ -22,6 +23,15 @@ function ready()
     console.log("received: " + evt.data); 
     parseMessage(evt.data);
   };
+}
+
+function enroll()
+{
+    if(socket)
+    {
+        socket.send("enroll|static|drawing");
+        console.log('sent enroll|static|drawing');
+    }
 }
 
 function parseMessage(msg)
@@ -40,7 +50,9 @@ function parseMessage(msg)
       posX = width * tokens[2];
       posY = height * tokens[3];
 
-      foundEl = document.elementFromPoint(posX, posY);
+      OnPositionChanged(posX, posY);
+
+      console.log('mouse x: ' + posX + ', y: ' + posY);
 
       break;
     case "l": //Log
@@ -48,16 +60,8 @@ function parseMessage(msg)
       break;
     case "q": //Query
       console.log("Received query from ", sender);
-      
-      var width = window.innerWidth || document.body.clientWidth;
-      var height = window.innerHeight || document.body.clientHeight;
 
-      //posX = width * 0.5;
-      //posY = height * 0.7;
-
-      foundEl = document.elementFromPoint(posX, posY);
-
-      if(foundEl && foundEl.src)
+      if(overElem && overElem.src)
       {
          sendImage(sender);
       }
@@ -76,7 +80,32 @@ function sendImage(requestor)
 {
   socket.send(">" + requestor + "|media|img"); //Let them know a picture is inbound
   
-  //var data = foundEl.toDataURL();
-  var data = foundEl.src;
+  //var data = overElem.toDataURL();
+  var data = overElem.src;
   socket.send(">" + requestor + "|" + data);
+
+  console.log('sent image: ' + data);
+}
+
+function OnPositionChanged (posX, posY) {
+
+    overElem = document.elementFromPoint(posX, posY);
+    
+    if (overElem && overElem.tagName === undefined) {   // in case of text nodes (Opera)
+        overElem = overElem.parentNode; // the parent node will be selected
+    }
+
+    if (selElem) {  // if there was previously selected element
+        if (selElem == overElem) {  // if mouse is over the previously selected element
+            return; // does not need to update the selection border
+        }
+        selElem.style.border = origBorder;  // set border to the stored value
+        selElem = null;
+    }
+        // the body and the html tag won't be selected
+    if (overElem && overElem.tagName.toLowerCase () != "body" && overElem.tagName.toLowerCase () != "html") {
+        selElem = overElem; // stores the selected element
+        origBorder = overElem.style.border; // stores the border settings of the selected element
+        overElem.style.border = "3px solid red";    // draws selection border
+    }
 }
