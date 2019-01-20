@@ -138,7 +138,9 @@ public class Screen : MonoBehaviour
     void spawnImage(string imageData)
     {
         var itemObject = Instantiate<GameObject>(ImageBlockPrefab);
-        imageData = imageData.Substring("data:image/png;base64,".Length);
+        imageData = imageData.Substring(imageData.IndexOf(",")+1); // "data:image/png;base64,".Length);
+        //0123
+        //1234
 
         byte[] bytes = System.Convert.FromBase64String(imageData);
 
