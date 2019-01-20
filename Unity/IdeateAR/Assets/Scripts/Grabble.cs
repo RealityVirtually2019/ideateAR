@@ -5,6 +5,8 @@ using UnityEngine.XR.MagicLeap;
 
 public class Grabble : MonoBehaviour
 {
+    public bool Deletable = true;
+
     float radius;
     bool isGrabbed;
     GameObject proxyObject;
@@ -47,11 +49,18 @@ public class Grabble : MonoBehaviour
 
         if(AppController.Instance.isPinchEnd && isGrabbed)
         {
+            //User just released item
             if (body != null) body.isKinematic = false;
             transform.SetParent(originalParent, true);
             originalParent = null;
             Destroy(proxyObject);
             proxyObject = null;
+
+            //Check to see if hand is in the trash
+            if(Deletable && GameObject.FindObjectOfType<TrashCan>().isPointerInRange)
+            {
+                Destroy(this.gameObject);
+            }
         }
 	}
 

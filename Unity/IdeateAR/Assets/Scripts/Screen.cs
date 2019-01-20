@@ -47,7 +47,7 @@ public class Screen : MonoBehaviour
             case "mobile":
                 this.screenType = ScreenTypeEnum.Mobile;
                 transform.localScale = Vector3.one * 0.2f;
-                //GetComponent<MeshRenderer>().enabled = false;
+                GetComponent<MeshRenderer>().enabled = false;
                 break;
             case "static":
                 this.screenType = ScreenTypeEnum.Static;
