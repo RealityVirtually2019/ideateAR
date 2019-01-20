@@ -1,0 +1,28 @@
+﻿{
+  "manifest_version": 2,
+  "name": "Ideate AR",
+  "description": "This extension enables Ideate AR functionality in Chrome",
+  "version": "1.0",
+  "icons": {
+    "16": "icon16.png",
+    "48": "icon48.png",
+    "128": "icon128.png"
+  },
+  "permissions": [
+    "tabs",
+    "<all_urls>"
+  ],
+  "browser_action": {
+    "default_icon": "icon48.png"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "http://*/*",
+        "https://*/*"
+      ],
+      "js": [ "reconnecting-websocket.js", "content.js" ],
+      "run_at": "document_end" // pay attention to this line
+    }
+  ]
+}
