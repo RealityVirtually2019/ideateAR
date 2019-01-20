@@ -61,7 +61,7 @@ public class Screen : MonoBehaviour
                 contentType = ContentType.Drawing;
                 break;
             case "model":
-                contentType = ContentType.Model;                
+                contentType = ContentType.Model;
                 break;
             case "excel":
                 contentType = ContentType.Excel;
@@ -99,6 +99,7 @@ public class Screen : MonoBehaviour
                             break;
                         case "model":
                             modelId = tokens[2];
+                            SocketClient.log("Screen's got a new model " + modelId);
                             break;
                     }
                 }
@@ -108,6 +109,7 @@ public class Screen : MonoBehaviour
 
     public void RequestMedia(GameObject requestor)
     {
+        SocketClient.log("Screen got a request for media");
         mediaRequestor = requestor;
 
         switch(contentType)

@@ -38,6 +38,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4649865180882266}
   - component: {fileID: 114867278720582960}
+  - component: {fileID: 114755303998486224}
   m_Layer: 0
   m_Name: Sticky Note
   m_TagString: Untagged
@@ -302,6 +303,17 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   m_maskType: 0
+--- !u!114 &114755303998486224
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1898356991029602}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 194fca029fb4c4b4f8df04baca19c197, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &114867278720582960
 MonoBehaviour:
   m_ObjectHideFlags: 1

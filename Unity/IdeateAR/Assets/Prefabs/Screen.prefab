@@ -23,6 +23,7 @@ GameObject:
   - component: {fileID: 23090652854503344}
   - component: {fileID: 114168562018512388}
   - component: {fileID: 135975243990206748}
+  - component: {fileID: 114675572718032018}
   m_Layer: 0
   m_Name: Screen
   m_TagString: screen
@@ -161,8 +162,12 @@ MonoBehaviour:
   IDLabel: {fileID: 114387095668922112}
   ImageBlockPrefab: {fileID: 1536873023253196, guid: 83882accde53bb94bb70b06c13f24fdc,
     type: 2}
-  ExcelPrefab: {fileID: 0}
-  Models: []
+  ExcelPrefab: {fileID: 1989623670958976, guid: 95f7f8bb2dd91f6438e9d709383262df,
+    type: 2}
+  Models:
+  - {fileID: 1509232196776046, guid: 4d1bb136a78d9e243a483f8aa53ac9dd, type: 2}
+  - {fileID: 1911579774074376, guid: 06380aeb82a87a446bebbc0ff59b6fd9, type: 2}
+  - {fileID: 1775270144032568, guid: a1378b29b2b672545a7a78a6b9b4da74, type: 2}
   IsPointerInRange: 0
   ScreenId: 
 --- !u!114 &114387095668922112
@@ -279,6 +284,17 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   m_maskType: 0
+--- !u!114 &114675572718032018
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1427499389024886}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 194fca029fb4c4b4f8df04baca19c197, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!135 &135975243990206748
 SphereCollider:
   m_ObjectHideFlags: 1

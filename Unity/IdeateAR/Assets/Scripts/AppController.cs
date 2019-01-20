@@ -68,12 +68,21 @@ public class AppController : MonoBehaviour
             }
             else if (SocketClient.Instance.LastMessage == "reset")
             {
-                SocketClient.log("App is resetting");
-                SceneManager.LoadScene(0);
+                Reset();
             }
         }
 
         wasPinching = isPinching;
+    }
+
+    public void Reset()
+    {
+        SocketClient.log("App is resetting");
+        var items = FindObjectsOfType<ContentItem>();
+        foreach(var item in items)
+        {
+            Destroy(item.gameObject);
+        }
     }
 
     public void SetMode(AppModeEnum newMode)

@@ -36,20 +36,15 @@ public class ItemPlacer : MonoBehaviour
 
     Screen findTargetScreen()
     {
-        /*RaycastHit hitInfo;
-        
-        if(Physics.Raycast(new Ray(Camera.main.transform.position, Camera.main.transform.forward), out hitInfo))
-        {
-            if (hitInfo.collider.gameObject.tag == "screen")
-            {
-                return hitInfo.collider.gameObject.GetComponent<Screen>();
-            }
-        }*/
-
         var screens = GameObject.FindObjectsOfType<Screen>();
         foreach(var screen in screens)
         {
-            if (screen.IsPointerInRange) return screen;
+            SocketClient.log("Checking screen " + screen.name);
+            if (screen.IsPointerInRange)
+            {
+                SocketClient.log("Winner winner chicken dinner");
+                return screen;
+            }
         }
 
         return null;
@@ -70,16 +65,17 @@ public class ItemPlacer : MonoBehaviour
 
             if (screen != null)
             {
-                screen.RequestMedia(this.gameObject);
-
                 //Spawn pending indicator while we wait for actual media
                 itemObject = Instantiate<GameObject>(PendingPrefab);
                 itemObject.transform.SetParent(this.transform);
                 itemObject.transform.localPosition = Vector3.zero;
                 isPlacing = true;
+
+                screen.RequestMedia(this.gameObject);
+
                 AppController.Instance.isPinchHandled = true;
             }
-            else SocketClient.log("Couldnt find a screen to pull media from");
+            else SocketClient.log("Couldnt find a screen to pull media from: " + AppController.Instance.isPinchHandled);
         }
 
         if(AppController.Instance.isPinchEnd)
@@ -111,8 +107,14 @@ public class ItemPlacer : MonoBehaviour
     {
         SocketClient.log("ItemPlacer got mediaReady");
         var pos = itemObject.transform.position;
+
+        SocketClient.log("Destroying pending indicator");
         Destroy(itemObject);
+
+        SocketClient.log("Switching to spawned item");
         itemObject = mediaItem;
+
+        SocketClient.log("Done with media ready");
     }
 }
 
