@@ -79,6 +79,18 @@ public class Screen : MonoBehaviour
             transform.position = handCenter.Value;
         }
 
+        if(IsPointerInRange && screenType == ScreenTypeEnum.Static)
+        {
+            //show position on 2d screen
+            var worldPoint = AppController.Instance.PinchPoint.Value;
+            var localPoint = transform.InverseTransformPoint(worldPoint);
+            
+            string x = Mathf.Abs(localPoint.x - 0.5f).ToString("0.000");
+            string y = Mathf.Abs(localPoint.y - 0.5f).ToString("0.000");
+
+            SocketClient.Instance.Send("mouse|" + x + "|" + y);
+        }
+
         if(SocketClient.Instance.IsNewMessage)
         {
             if (SocketClient.Instance.Sender == ScreenId || contentType == ContentType.Model)
@@ -100,6 +112,15 @@ public class Screen : MonoBehaviour
                         case "model":
                             modelId = tokens[2];
                             SocketClient.log("Screen's got a new model " + modelId);
+                            break;
+                        case "null":
+                            //We didnt get anything so bail
+                            if(requestPending)
+                            {
+                                requestPending = false;
+                                GameObject nullObject = null;
+                                mediaRequestor.SendMessage("mediaReady", nullObject);
+                            }
                             break;
                     }
                 }

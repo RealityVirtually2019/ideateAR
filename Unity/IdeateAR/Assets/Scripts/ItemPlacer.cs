@@ -105,16 +105,15 @@ public class ItemPlacer : MonoBehaviour
 
     void mediaReady(GameObject mediaItem)
     {
-        SocketClient.log("ItemPlacer got mediaReady");
         var pos = itemObject.transform.position;
-
-        SocketClient.log("Destroying pending indicator");
         Destroy(itemObject);
 
-        SocketClient.log("Switching to spawned item");
         itemObject = mediaItem;
-
-        SocketClient.log("Done with media ready");
+        if(mediaItem == null)
+        {
+            isPending = false;
+            isPlacing = false;
+        }
     }
 }
 

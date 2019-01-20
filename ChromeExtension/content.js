@@ -13,7 +13,7 @@ function ready()
 
   socket.onopen = function(evt) 
   {
-    socket.send("enroll|mobile|drawing");
+    socket.send("enroll|static|drawing");
     console.log('Web socket opened: ' + url);
   };
 
@@ -52,8 +52,8 @@ function parseMessage(msg)
       var width = window.innerWidth || document.body.clientWidth;
       var height = window.innerHeight || document.body.clientHeight;
 
-      posX = width * 0.5;
-      posY = height * 0.7;
+      //posX = width * 0.5;
+      //posY = height * 0.7;
 
       foundEl = document.elementFromPoint(posX, posY);
 
